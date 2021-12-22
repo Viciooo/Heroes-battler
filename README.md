@@ -49,79 +49,79 @@ Postać posiada kolejno:
  
  `luck` - dla każdej postaci każdy pkt szczęścia dodaje 1% `dmg` przy ataku, (max 100pkt czyli 200% `dmg`) [więcej w sekcji walka]
  
- ### Walka
- #### Jest mozliwa jeśli każdy z graczy ma min 1 sztukę złota
- - Walka przebiega turowo, postać atakująca pierwsza jest losowana.
- - Mamy dwóch wojowników `heroA` i `heroB` , załóżmy, że `heroA` zaczyna
- - Poniższy cykl powtarza się, aż do "stracenia przytomności" jednego z nich, oczywiście bohaterowie atakują na zmianę
- 
-  1.`heroA` atakuje 
-   - atakując za dmg pomiędzy `0` a `heroA.dmg*(100+heroA.luck)` 
-   
-  2.`heroB` używa:
-   - `block` jeśli jego klasa to `Warrior`:
-     - blokuje za `shieldProtection` czyli obrażenia otrzymywane to `dmgReceived*(1-shieldProtection)`
-   - `dodge` jeśli klasa to `Hunter`
-     - otrzymuje `dmgReceived` z prawdopodobieństwem `1-dodge`
-   -  nic nie robi jeśli `Mage`
-  
-  - Po końcu walki przydzielane jest złoto:
-   - [max((pomiędzy `1` a `25` % złota posiadanego przez gracza, który przegrał), 1 sztuka złota)]
-   - złoto jest zabierane od gracza, który przegrał
-  
-  - Przydzielane jest też doświadczenie wynoszące:
-   - pomiędzy `0.1` a `10` % `exp` gracza, który przegrał, `gracz ten NIE traci exp`
-  
-  ### Poziomy
-  Na początku dla każdej postaci:
-  - `exp = 100` 
-  - `lvl = 1` 
-  - `expModifier = 1.2` - mnożnik skalujacy następne poziomy postaci
-  - `expToNextLvl` - próg do osiągnięcia kolejnego poziomu (jesli `exp` postaci jest mu równy poziom zostaje "wbity")
-    - dla przykładu do wbicia poziomu 2 potrzebne będzie `100*expModifier` pkt doświadczenia czyli `120` i `expModifier += 0.1` - mnoznik się zwiększa (następne poziomy trudniej "wbić")
-    - na 3 poziom `expModifier = 1.3` więc pkt doświadczenia potrzebne będzie `expToPreviousLvl`(próg do poprzedniego poziomu) * `expModifier` i inkrementujemy `expModifier` (`expModifier += 0.1`)
-  - dla kolejnych poziomów progi są generowane jak powyżej
-  - każdy poziom daje `4pkt` do ulepszania postaci
-  
-  ### Ulepszanie postaci
-  - gracz wybiera gdzie dodać pkt postaci, powinien widzieć wszystkie dostępne w gui:
-   - przydzielone pkt dają benefity określone w punkcie [Statystyki]
-   - MOŻE być ich więcej niż 4 !!!
-  
-  ### Kreacja postaci
-   - Wybór `nick`'a postaci
-   - Bazowe statystyki postaci, które wybrały dane klasy:
-    
-   - `Warrior`
-     - `strength = 6`
-     - `dexterity = 2`
-     - `luck = 3`
-     - `inteligence = 1`
-     - `endurance = 8`
+### Walka
+#### Jest mozliwa jeśli każdy z graczy ma min 1 sztukę złota
+- Walka przebiega turowo, postać atakująca pierwsza jest losowana.
+- Mamy dwóch wojowników `heroA` i `heroB` , załóżmy, że `heroA` zaczyna
+- Poniższy cykl powtarza się, aż do "stracenia przytomności" jednego z nich, oczywiście bohaterowie atakują na zmianę
 
-   - `Hunter`
-     - `strength = 1`
-     - `dexterity = 7`
-     - `luck = 4`
-     - `inteligence = 2`
-     - `endurance = 6`
+ 1.`heroA` atakuje 
+  - atakując za dmg pomiędzy `0` a `heroA.dmg*(100+heroA.luck)` 
 
-   - `Mage`
-     - `strength = 1`
-     - `dexterity = 1`
-     - `luck = 6`
-     - `inteligence = 8`
-     - `endurance = 4`
-   
-   - Doświadczenie `exp = 100`
-   - Złoto `gold = 500`
-   - Poziom `lvl = 1`
-   - [uproszczenie] w przypadku `Warrior` każdy ma taką samą tarczę o `shieldProtection = 50` (czyli 50%)
-   
-   [Disclaimer] to tylko proponowane statystyki podstawowe, mogą okazać się zwyczajnie słabe ;)
-   
-   ### Zapisywanie danych do pliku:
-   Dane powinny być zapisywane do pliku (format pozostawiamy do wyboru) w taki sposób, aby po otworzeniu gry dało się korzystać z wcześniej utworzonych postaci
+ 2.`heroB` używa:
+  - `block` jeśli jego klasa to `Warrior`:
+    - blokuje za `shieldProtection` czyli obrażenia otrzymywane to `dmgReceived*(1-shieldProtection)`
+  - `dodge` jeśli klasa to `Hunter`
+    - otrzymuje `dmgReceived` z prawdopodobieństwem `1-dodge`
+  -  nic nie robi jeśli `Mage`
+
+ - Po końcu walki przydzielane jest złoto:
+  - [max((pomiędzy `1` a `25` % złota posiadanego przez gracza, który przegrał), 1 sztuka złota)]
+  - złoto jest zabierane od gracza, który przegrał
+
+ - Przydzielane jest też doświadczenie wynoszące:
+  - pomiędzy `0.1` a `10` % `exp` gracza, który przegrał, `gracz ten NIE traci exp`
+
+ ### Poziomy
+ Na początku dla każdej postaci:
+ - `exp = 100` 
+ - `lvl = 1` 
+ - `expModifier = 1.2` - mnożnik skalujacy następne poziomy postaci
+ - `expToNextLvl` - próg do osiągnięcia kolejnego poziomu (jesli `exp` postaci jest mu równy poziom zostaje "wbity")
+   - dla przykładu do wbicia poziomu 2 potrzebne będzie `100*expModifier` pkt doświadczenia czyli `120` i `expModifier += 0.1` - mnoznik się zwiększa (następne poziomy trudniej "wbić")
+   - na 3 poziom `expModifier = 1.3` więc pkt doświadczenia potrzebne będzie `expToPreviousLvl`(próg do poprzedniego poziomu) * `expModifier` i inkrementujemy `expModifier` (`expModifier += 0.1`)
+ - dla kolejnych poziomów progi są generowane jak powyżej
+ - każdy poziom daje `4pkt` do ulepszania postaci
+
+ ### Ulepszanie postaci
+ - gracz wybiera gdzie dodać pkt postaci, powinien widzieć wszystkie dostępne w gui:
+  - przydzielone pkt dają benefity określone w punkcie [Statystyki]
+  - MOŻE być ich więcej niż 4 !!!
+
+ ### Kreacja postaci
+  - Wybór `nick`'a postaci
+  - Bazowe statystyki postaci, które wybrały dane klasy:
+
+  - `Warrior`
+    - `strength = 6`
+    - `dexterity = 2`
+    - `luck = 3`
+    - `inteligence = 1`
+    - `endurance = 8`
+
+  - `Hunter`
+    - `strength = 1`
+    - `dexterity = 7`
+    - `luck = 4`
+    - `inteligence = 2`
+    - `endurance = 6`
+
+  - `Mage`
+    - `strength = 1`
+    - `dexterity = 1`
+    - `luck = 6`
+    - `inteligence = 8`
+    - `endurance = 4`
+
+  - Doświadczenie `exp = 100`
+  - Złoto `gold = 500`
+  - Poziom `lvl = 1`
+  - [uproszczenie] w przypadku `Warrior` każdy ma taką samą tarczę o `shieldProtection = 50` (czyli 50%)
+
+  [Disclaimer] to tylko proponowane statystyki podstawowe, mogą okazać się zwyczajnie słabe ;)
+
+  ### Zapisywanie danych do pliku:
+  Dane powinny być zapisywane do pliku (format pozostawiamy do wyboru) w taki sposób, aby po otworzeniu gry dało się korzystać z wcześniej utworzonych postaci
    
  Autorzy
  -------
