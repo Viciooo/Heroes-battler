@@ -66,11 +66,11 @@ Postać posiada kolejno:
   -  nic nie robi jeśli `Mage`
 
  - Po końcu walki przydzielane jest złoto:
-  - [max((pomiędzy `1` a `25` % złota posiadanego przez gracza, który przegrał), 1 sztuka złota)]
-  - złoto jest zabierane od gracza, który przegrał
+   - [max((pomiędzy `1` a `25` % złota posiadanego przez gracza, który przegrał), 1 sztuka złota)]
+   - złoto jest zabierane od gracza, który przegrał
 
  - Przydzielane jest też doświadczenie wynoszące:
-  - pomiędzy `0.1` a `10` % `exp` gracza, który przegrał, `gracz ten NIE traci exp`
+   - pomiędzy `0.1 a 10 % exp` gracza, który przegrał, `gracz ten NIE traci exp`
 
  ## Poziomy
  Na początku dla każdej postaci:
