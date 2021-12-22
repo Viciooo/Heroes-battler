@@ -90,23 +90,23 @@ Postać posiada kolejno:
   
   ### Kreacja postaci
    - Wybór `nick`'a postaci
-   - Bazowe statystyki postaci, które wybrały dane klasy
-   
-    - `Warrior`:
-      - `strength = 6`
-      - `dexterity = 2`
-      - `luck = 3`
-      - `inteligence = 1`
-      - `endurance = 8`
-     
-    - `Hunter`:
+   - Bazowe statystyki postaci, które wybrały dane klasy:
+    
+   - `Warrior`
+     - `strength = 6`
+     - `dexterity = 2`
+     - `luck = 3`
+     - `inteligence = 1`
+     - `endurance = 8`
+
+   - `Hunter`
      - `strength = 1`
      - `dexterity = 7`
      - `luck = 4`
      - `inteligence = 2`
      - `endurance = 6`
-    
-    - `Mage`:
+
+   - `Mage`
      - `strength = 1`
      - `dexterity = 1`
      - `luck = 6`
