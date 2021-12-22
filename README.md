@@ -90,7 +90,7 @@ Postać posiada kolejno:
   
   ### Kreacja postaci
    - Wybór `nick`'a postaci
-   - Bazowe statystyki postaci, które wybrały dane klasy:
+   - Bazowe statystyki postaci, które wybrały dane klasy
    
     - `Warrior`:
       - `strength = 6`
