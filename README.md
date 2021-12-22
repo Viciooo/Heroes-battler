@@ -1,6 +1,9 @@
 # Heros-battler (min dla 2os, w przypadku większej grupy spytaj swojego prowadzącego)
 Projekt 2 OP inspirowany `Shakes & Fidget` i `Swords & sandals`
 
+## Punktacja
+`? Do uzgodnienia ?`
+
 ## Ogólny opis
 Autobattler stworzonych przez użytkownika postaci, które mogą posiadać różne klasy postaci oraz statystyki.
 
