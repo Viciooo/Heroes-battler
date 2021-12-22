@@ -99,21 +99,21 @@ Postać posiada kolejno:
     - `strength = 6`
     - `dexterity = 2`
     - `luck = 3`
-    - `inteligence = 1`
+    - `intelligence = 1`
     - `endurance = 8`
 
   - `Hunter`
     - `strength = 1`
     - `dexterity = 7`
     - `luck = 4`
-    - `inteligence = 2`
+    - `intelligence = 2`
     - `endurance = 6`
 
   - `Mage`
     - `strength = 1`
     - `dexterity = 1`
     - `luck = 6`
-    - `inteligence = 8`
+    - `intelligence = 8`
     - `endurance = 4`
 
   - Doświadczenie `exp = 100`
@@ -128,12 +128,15 @@ Postać posiada kolejno:
   
   ### [? Opcionalnie do zatwierdzenia ?] 
   - zapisywanie % wygranych walk:
-    - `Warror` vs `Mage`
-    - `Warror` vs `Hunter`
+    - `Warrior` vs `Mage`
+    - `Warrior` vs `Hunter`
     - `Hunter` vs `Mage`
-  - zapisywanie % wygranych walk ogólnie dla każdej z klas
+  - zapisywanie % wygranych walk dla każdej z klas
   - dane mają być wyświetlane na ekranie w formie WYKRESÓW KOŁOWYCH (najlepiej na osobnej karcie, lub tak, aby  nie przytłaczały widoku głównego)
    
+   
+ [Disclaimer] instrukcja może zawierać błędy językowe, oczywiście umieszczone celowo, aby zbadać czujność czytającego :)
+ 
  Autorzy
  -------
  Szymon @bielowka Bielówka & Piotr @Viciooo Witek
