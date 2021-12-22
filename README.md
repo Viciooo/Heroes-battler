@@ -15,7 +15,7 @@ Cel gry jest w sumie bliżej nieokreślony bo zakładając, że nie będzie max 
 ### Klasy
 Każdy bohater ma jedną z 3 klas:
 - `Mage`
-- `Worrior`
+- `Warrior`
 - `Hunter`
 
 Każda z tych klas ma swoją unikalną broń, kolejno:
@@ -23,7 +23,7 @@ Każda z tych klas ma swoją unikalną broń, kolejno:
 - `Sword`
 - `Bow`
  
-Dodatkowo w przypadku `Worrior`'a gdy blokuje cios używa `shield` która blokuje `shieldProtection` % obrażeń od ciosu przeciwnika (max 50%).
+Dodatkowo w przypadku `Warrior`'a gdy blokuje cios używa `shield` która blokuje `shieldProtection` % obrażeń od ciosu przeciwnika (max 50%).
 `Hunter` ma umiejętność `dodge`  (max 50%) , która daje mu % szans na uniknięcie otrzymania obrażeń od ciosu.
 `Mage` nie posiada żadnych umiejętnosci tego typu :(
 
