@@ -49,7 +49,7 @@ Postać posiada kolejno:
  
  `luck` - dla każdej postaci każdy pkt szczęścia dodaje 1% `dmg` przy ataku, (max 100pkt czyli 200% `dmg`) [więcej w sekcji walka]
  
-### Walka
+## Walka
 #### Jest mozliwa jeśli każdy z graczy ma min 1 sztukę złota
 - Walka przebiega turowo, postać atakująca pierwsza jest losowana.
 - Mamy dwóch wojowników `heroA` i `heroB` , załóżmy, że `heroA` zaczyna
@@ -72,7 +72,7 @@ Postać posiada kolejno:
  - Przydzielane jest też doświadczenie wynoszące:
   - pomiędzy `0.1` a `10` % `exp` gracza, który przegrał, `gracz ten NIE traci exp`
 
- ### Poziomy
+ ## Poziomy
  Na początku dla każdej postaci:
  - `exp = 100` 
  - `lvl = 1` 
@@ -83,12 +83,12 @@ Postać posiada kolejno:
  - dla kolejnych poziomów progi są generowane jak powyżej
  - każdy poziom daje `4pkt` do ulepszania postaci
 
- ### Ulepszanie postaci
+ ## Ulepszanie postaci
  - gracz wybiera gdzie dodać pkt postaci, powinien widzieć wszystkie dostępne w gui:
   - przydzielone pkt dają benefity określone w punkcie [Statystyki]
   - MOŻE być ich więcej niż 4 !!!
 
- ### Kreacja postaci
+ ## Kreacja postaci
   - Wybór `nick`'a postaci
   - Bazowe statystyki postaci, które wybrały dane klasy:
 
@@ -120,7 +120,7 @@ Postać posiada kolejno:
 
   [Disclaimer] to tylko proponowane statystyki podstawowe, mogą okazać się zwyczajnie słabe ;)
 
-  ### Zapisywanie danych do pliku:
+  ## Zapisywanie danych do pliku:
   Dane powinny być zapisywane do pliku (format pozostawiamy do wyboru) w taki sposób, aby po otworzeniu gry dało się korzystać z wcześniej utworzonych postaci
    
  Autorzy
