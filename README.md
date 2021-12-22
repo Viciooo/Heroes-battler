@@ -1,4 +1,4 @@
-# Heros-battler (min dla 2os, w przypadku większej grupy spytaj swojego prowadzącego)
+# Heroes-battler (min dla 2os, w przypadku większej grupy spytaj swojego prowadzącego)
 Projekt 2 OP inspirowany `Shakes & Fidget` i `Swords & sandals`
 
 ## Punktacja
