@@ -87,7 +87,7 @@ Postać posiada kolejno:
  - każdy poziom daje `4pkt` do ulepszania postaci
 
  ## Ulepszanie postaci
- - gracz wybiera gdzie dodać pkt postaci, powinien widzieć wszystkie dostępne w gui:
+ - gracz wybiera gdzie dodać pkt postaci, powinien widzieć wszystkie dostępne w gui
   - przydzielone pkt dają benefity określone w punkcie [Statystyki]
   - MOŻE być ich więcej niż 4 !!!
 
