@@ -124,11 +124,19 @@ Postać posiada kolejno:
   [Disclaimer] to tylko proponowane statystyki podstawowe, mogą okazać się zwyczajnie słabe ;)
 
   ## Zapisywanie danych do pliku:
-  Dane powinny być zapisywane do pliku (format pozostawiamy do wyboru) w taki sposób, aby po otworzeniu gry dało się korzystać z wcześniej utworzonych postaci
+  - Dane powinny być zapisywane do pliku (format pozostawiamy do wyboru) w taki sposób, aby po otworzeniu gry dało się korzystać z wcześniej utworzonych postaci
+  
+  ### [? Opcionalnie do zatwierdzenia ?] 
+  - zapisywanie % wygranych walk:
+    - `Warror` vs `Mage`
+    - `Warror` vs `Hunter`
+    - `Hunter` vs `Mage`
+  - zapisywanie % wygranych walk ogólnie dla każdej z klas
+  - dane mają być wyświetlane na ekranie w formie WYKRESÓW KOŁOWYCH (najlepiej na osobnej karcie, lub tak, aby  nie przytłaczały widoku głównego)
    
  Autorzy
  -------
- Szymon Bielówka & Piotr Witek
+ Szymon @bielowka Bielówka & Piotr @Viciooo Witek
  
  
  
