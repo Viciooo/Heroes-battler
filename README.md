@@ -54,7 +54,13 @@ Postać posiada kolejno:
  
 ## Walka
 #### Jest mozliwa jeśli każdy z graczy ma min 1 sztukę złota
-- Walka przebiega turowo, postać atakująca pierwsza jest losowana.
+- Walka przebiega turowo, postać atakująca pierwsza jest losowana w następujący sposób:
+  - chanceToAttackFirst = (heroLuck)/(heroLuck + otherHeroLuck)
+Przykład:
+Postać A ma 75 LUCK
+Postać B ma 25 LUCK
+Postać A ma 75% szans na pierwszy atak w walce, postać B natomiast 25%.
+
 - Mamy dwóch wojowników `heroA` i `heroB` , załóżmy, że `heroA` zaczyna
 - Poniższy cykl powtarza się, aż do "stracenia przytomności" jednego z nich, oczywiście bohaterowie atakują na zmianę
 
@@ -140,6 +146,7 @@ Postać posiada kolejno:
  Autorzy
  -------
  Szymon @bielowka Bielówka & Piotr @Viciooo Witek
+ 
  
  
  
